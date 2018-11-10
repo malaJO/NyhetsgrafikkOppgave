@@ -28,7 +28,7 @@
     width: 2rem;
   }
 
-  .arbeidsledigProsent {width: 100vw;}
+  .arbeidsledigProsent {width: 100%;}
 
   .breaking {
     display: block;
@@ -37,7 +37,7 @@
 
   .VennDia {width: 80%;}
 
-  .row {margin-bottom: 2rem;}
+  .row {margin: 0 0 2rem 0;}
 
   .ct-label.ct-horizontal {font-size: 0.5rem;}
 
