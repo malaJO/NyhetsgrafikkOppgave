@@ -1,3 +1,5 @@
+// The CountUp library is used to illustrate descrepancy in numbers between NAV and SSB
+
 /*
 
 	countUp.js
