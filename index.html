@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <title>Hva er mål på arbeidsledighten?</title>
+  <meta name="description" content="by Jovana Pavic, oppgave i ansettelsessprosessen for Nyhetsgrafikk">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8"/>
+
+  <!--Stylesheets for bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900" rel="stylesheet">
+
+  <!-- Chartist css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+
+  <!-- Local stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="Animation.css">
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+<!-- Main headline -->
+  <h1 class="underlined" style="margin-bottom: 2rem">Arbeidsledighet: <b>stabil i 2018</b></h1>
+
+<!-- Explaining unemployment -->
+  <div class="row">
+
+    <div class="col-12 fact d-flex justify-content-center">
+      <div class="factbox">
+        <img src="assets/svg/Person.svg">
+        <div class="Criteria">
+          <h4>Arbeidsledig:</h4>
+          <ul>
+            <li>være helt uten inntektsgivende arbeid</li>
+            <li>ha forsøkt å få arbeid</li>
+            <li>være tilgjengelig for arbeid</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Comparing SSB and NAV data -->
+  <div class="row">
+
+    <div class="col-md-6 col-sm-12">
+      <div class="arbeidsledige ct-minor-third" id="chart1"> </div>
+      <h6>Antall arbeidsledige - <p class="NAV highlight">NAV</p> vs. <p class="SSB highlight">SSB</p></h6>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+      <div class="arbeidsledige ct-minor-third" id="chart2"> </div>
+      <h6>Prosent av arbeidsstyrken - <p class="NAV highlight">NAV</p> vs. <p class="SSB highlight">SSB</p></h6>
+   </div>
+
+  </div>
+
+  <!-- Two ways of collecting data -->
+
+    <h4 class="underlined" style="padding-top:1rem">To offisielle mål på arbeidsledighet i Norge</h4>
+    <h1 style="font-size: 3.2rem; padding-top:0"><b class="NAV">NAV</b> vs. <b class="SSB">SSB</b></h1>
+
+
+<!-- Venn diagram -->
+  <div class="row">
+    <div class="col-12">
+      <img class="VennDia" src="assets/svg/NAVSSB_VennDia.svg">
+    </div>
+
+<!-- Counting data -->
+    <div class="AllCounters">
+      <div class="counter">
+        <h2  id="peopleCountNAV">   </h2><h3>  | </h3><h2  id="peopleCountSBB"></h2>
+        <h6>antall arbeidsledige</h6>
+      </div>
+      <div class="counter">
+        <h2  id="percentCountNAV"></h2><h3>  | </h3><h2  id="percentCountSBB"></h2>
+        <h6>% av arbeidsstyrken</h6>
+      </div>
+    </div>
+
+<!-- Explaining different ways of counting -->
+    <div class="DataCard DataCardNAV">
+      <img src="assets/svg/NAVLogo.svg">
+      <div>
+        <div style="display:block"><img src="assets/svg/NAVRegistrerte.svg"><p>registrert hos NAV</p></div>
+        <div><img src="assets/svg/NAVFulltelling.svg"><p>fulltelling (alle registrerte)</p></div>
+      </div>
+    </div>
+
+    <div class="DataCard DataCardSSB">
+      <img src="assets/svg/SSBLogo.svg">
+      <div>
+        <div style="display:block"><img src="assets/svg/SSBAKU.svg"><p>Arbeidskraftundersøkinga</p></div>
+        <div style="display:block"><img src="assets/svg/SSBTelefon.svg"><p>Telefonundersøkelse</p></div>
+        <div><img src="assets/svg/SSBInternasjonal.svg"><p>Sammenligbar internasjonalt</p></div>
+      </div>
+    </div>
+
+  </div>
+
+<!-- Percentage per year -->
+  <h4 class="underlined" style="padding-top:1rem">Arbeidsledige som prosent av arbeidsstyrken - årlig</h4>
+  <h1 style="padding-top:0; font-size:3.2rem;" class="col-12"><b class="NAV">NAV</b> vs. <b class="SSB">SSB</b></h1>
+
+  <div class="arbeidsledigProsent ct-golden-section" id="chart3">
+  </div>
+
+  <h6>
+    <p class="NAV highlight">NAV: </p>
+    <cite> "Arbeidsledigheten lavest siden 2008" </cite>
+    <div class="breaking">
+    <p class="SSB highlight"> SBB: </p>
+    <p>"..." ?</p>
+  </div>
+  </h6>
+
+
+<footer>
+  <h6><cite>Utarbeidet av Jovana Pavić, som første oppgave i ansettelsessprosessen for Nyhetsgrafikk</cite></h6>
+</footer>
+
+</div>  <!-- Closing container for whole body -->
+
+
+<!-- Chartist scrpits -->
+  <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+<!-- Local scripts -->
+
+  <script src="CountUp.js"></script>
+  <script src="main.js"></script>
+
+<script src="https://unpkg.com/chartist-plugin-tooltips@0.0.17"></script>
+<script src="Chart.js"></script>
+
+</body>
+
+</html>

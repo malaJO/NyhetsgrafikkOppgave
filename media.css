@@ -1,0 +1,46 @@
+@media (max-width: 767.98px) {
+
+  h2 {font-size: 3rem;}
+
+  h4 {padding-top: 2rem;}
+
+  b {display: block;}
+
+  .container {padding: 4px;}
+
+  .factbox {
+    margin: 0 1rem;
+    padding: 0.6rem;
+  }
+
+  .DataCardNAV {top:0;}
+
+  .DataCardSSB {bottom: 0;}
+
+  .Criteria {
+    line-height: 1;
+    width: 76%;
+    margin-left: 1.8rem;
+  }
+
+  .fact img {
+    margin: 0;
+    width: 2rem;
+  }
+
+  .arbeidsledigProsent {width: 100vw;}
+
+  .breaking {
+    display: block;
+    margin-bottom: 4rem;
+  }
+
+  .VennDia {width: 80%;}
+
+  .row {margin-bottom: 2rem;}
+
+  .ct-label.ct-horizontal {font-size: 0.5rem;}
+
+  footer {padding: 0 0 6px 0;}
+
+ }
