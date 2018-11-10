@@ -1,10 +1,12 @@
 @media (max-width: 767.98px) {
 
-  h2 {font-size: 3rem;}
+  h2 {font-size: 2.8rem;}
 
   h4 {padding-top: 2rem;}
 
   b {display: block;}
+
+  p {font-size: 0.8rem;}
 
   .container {padding: 4px;}
 
@@ -27,6 +29,10 @@
     margin: 0;
     width: 2rem;
   }
+
+  .DataCard img {width: 2rem;}
+
+  .DataCard {padding: 0.6rem;}
 
   .arbeidsledigProsent {width: 100%;}
 

@@ -54,6 +54,13 @@ p {
   font-size: 1rem;
 }
 
+a:visited {
+ color: #391C28
+}
+
+a:hover {
+color: #1B1C24;
+}
 
 
 /* Styling factbox about unemployment */
@@ -145,7 +152,7 @@ li {
   left: 2rem;
   background-color: rgba(255,255,255,0.3);
   box-shadow: 0 0 6px #CA304A;
-  color: #391C28;
+
 }
 
 .DataCardSSB {
@@ -154,12 +161,13 @@ li {
   right: 2rem;
   background-color: rgba(255,255,255,0.3);
   box-shadow: 0 0 10px #E96F4E;
-  color: #391C28;
+  /* color: #391C28; */
 }
 
 .DataCard {
   border-radius: 6px;
-  padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+  padding: 0.8rem;
+  color: #391C28;
 }
 
 .DataCard img {
