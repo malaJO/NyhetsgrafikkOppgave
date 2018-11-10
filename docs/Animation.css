@@ -1,0 +1,63 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.2)
+  }
+  60% {
+    transform: scale(1)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
+
+
+@keyframes comeInLeft {
+  0% {
+    left: -10rem;
+    opacity: 0;
+  }
+  50% {
+    left: -10rem;
+    opacity: 0;
+  }
+  100% {
+    left: 2rem;
+    opacity: 1;
+  }
+}
+
+@keyframes comeInRight {
+  0% {
+    right: -10rem;
+    opacity: 0;
+  }
+  50% {
+    right: -10rem;
+    opacity: 0;
+  }
+  100% {
+    right: 2rem;
+    opacity: 1;
+  }
+}
+
+
+
+.NAVAnim {
+  animation: comeInLeft 4s;
+  animation-timing-function: ease-in-out;
+}
+
+.SSBAnim {
+  animation: comeInRight 4s;
+  animation-timing-function: ease-in-out;
+}
+
+
+.animPulse {
+  animation: pulse 20s infinite;
+  animation-timing-function: ease-in-out;
+}

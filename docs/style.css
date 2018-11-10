@@ -1,0 +1,376 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+/* Positioning and styling background for the entire page */
+.container {
+  background-image: linear-gradient(to top, #2D1C25, #F68E58, #502B30 80%);
+}
+
+.row {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+
+/* Styling elements of the graphic */
+b {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  z-index: 1;
+  padding-top: 2rem;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 0;
+  text-align: right;
+}
+
+h3 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  margin: 0;
+  text-align: right;
+}
+
+h4 {
+  text-align: center;
+}
+
+h6 {
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
+
+
+/* Styling factbox about unemployment */
+.factbox {
+  padding: 2rem;
+  background-image: linear-gradient(to left, #CF4B60, #F68E58);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px #391C28;
+}
+
+.Criteria {
+  display: inline-block;
+
+}
+
+.Criteria h4 {
+  text-align: left;
+  font-weight: 900;
+  padding: 0 0 0.6rem 0;
+}
+
+ul {
+ margin: 0;
+ padding: 0;
+}
+
+li {
+  height: 32px;
+}
+
+.fact img {
+  display: inline-block;
+  width: 3.2rem;
+  vertical-align: top;
+  margin: 0 2rem 0 2rem;
+}
+
+
+
+/* Highlighting and changing color for NAV and SSB in  */
+
+.highlight {
+  background-color: #391C28;
+  padding: 0.4rem;
+  border-radius: 2px;
+}
+
+.NAV {
+  display: inline-block;
+  color: #CA304A;
+  font-weight: 900;
+  border-radius: 6px;
+  text-shadow: 0px 0px 6px #391C28;
+}
+
+.SSB {
+  display: inline;
+  color: #F27550;
+  font-weight: 900;
+  border-radius: 6px;
+  text-shadow: 0px 0px 6px #391C28;
+}
+
+
+/* Styling people and percent counters */
+
+#peopleCountNAV, #percentCountNAV {
+  display: inline;
+  color: #4A121B;
+}
+
+#peopleCountSBB, #percentCountSBB {
+  display: inline;
+  color: #753827;
+}
+
+
+/* Styling venn diagram section */
+
+.VennDia {
+  display: block;
+  width: 50%;
+  margin: 6rem auto;
+}
+
+.DataCardNAV {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  background-color: rgba(255,255,255,0.3);
+  box-shadow: 0 0 6px #CA304A;
+  color: #391C28;
+}
+
+.DataCardSSB {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  background-color: rgba(255,255,255,0.3);
+  box-shadow: 0 0 10px #E96F4E;
+  color: #391C28;
+}
+
+.DataCard {
+  border-radius: 6px;
+  padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+}
+
+.DataCard img {
+  width: 3rem;
+  margin: 0 0.4rem;
+  vertical-align: top;
+}
+
+.DataCard div {
+  display: inline-block;
+}
+
+.DataCard div img {
+  width: 1.6rem;
+  margin-right: 0.2rem;
+}
+
+.DataCard div h6 {
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.counter h3,p {
+  display: inline;
+}
+
+.counter {
+  text-align: center;
+}
+
+.AllCounters {
+  position: absolute;
+  display: block;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  top:50%;
+  color: white;
+}
+
+
+/* Width of the last line chart */
+
+.arbeidsledigProsent {
+  width: 90%;
+}
+
+/* Styling last line Chart */
+
+/* First series style */
+.ct-series-a .ct-line {
+  stroke: #E96F4E;
+  stroke-width: 0.4rem;
+}
+
+.ct-series-a .ct-point {
+  stroke: #FF9F6E;
+  stroke-width: 0.6rem;
+  stroke-linecap: round;
+  z-index: 10;
+}
+
+.ct-series-a .ct-area {
+  fill: #F68E58;
+  fill-opacity: 0.3;
+}
+
+
+/* Second series style */
+.ct-series-b .ct-line {
+  stroke: #CA304A;
+  stroke-linecap:round
+}
+
+.ct-series-b .ct-point {
+  stroke: #502B30;
+  stroke-width: 0.6rem;
+  stroke-linecap:square;
+  z-index: 10;
+}
+
+.ct-series-b .ct-area {
+  fill: #CF4B60;
+  fill-opacity: 0.3;
+}
+
+/* Styling tables unemployment percentage and number of people */
+.SSBAntall .ct-line {
+  stroke: none;
+  stroke-width: 1px;
+  z-index: 10;
+}
+
+.SSBAntall .ct-point {
+  stroke: white;
+  stroke-width: 2px;
+  z-index: 10;
+}
+
+.SSBAntall .ct-area {
+  fill: #F68E58;
+  fill-opacity: 0.6;
+  mix-blend-mode: normal;
+}
+
+.NAVAntall .ct-point {
+  stroke: white;
+  stroke-width: 6px;
+  z-index: 10;
+}
+
+.NAVAntall .ct-area {
+  fill: #CA304A;
+  fill-opacity: 0.6;
+  mix-blend-mode: normal;
+}
+
+
+.NAVProsent .ct-area {
+  fill: #CA304A;
+  fill-opacity: 0.6;
+  mix-blend-mode: normal;
+}
+
+.NAVProsent .ct-point {
+  stroke: white;
+  stroke-width:6px;
+}
+
+.SSBProsent .ct-area {
+  fill: #F68E58;
+  fill-opacity: 0.6;
+  mix-blend-mode: normal;
+}
+
+.SSBProsent .ct-point {
+  stroke: white;
+  stroke-width:6px;
+}
+
+
+/* Styling vertical and horizontal labels on the charts */
+.arbeidsledige .ct-label.ct-vertical {
+  color: white;
+  opacity: 0.4;
+}
+
+.arbeidsledige .ct-label.ct-horizontal {
+  font-size: 0.8rem;
+  color: white;
+  /* opacity: 0; */
+  text-decoration: none;
+}
+
+.arbeidsledige .ct-grid.ct-vertical {
+  stroke: white;
+  opacity: 1;
+}
+
+.arbeidsledige .ct-grid.ct-horizontal {
+  stroke: white;
+  opacity: 0;
+}
+
+/* labels of the table */
+
+.ct-label.ct-horizontal {
+  color: white;
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* styling grid in the background of the graph */
+.ct-grid {
+stroke: none;
+stroke-width: 0.2px;
+stroke-dasharray: 8px 8px;
+mix-blend-mode: soft-light;
+}
+
+/* Styling only the horizontal grids */
+.ct-horizontal {
+  stroke: #DAD3C7;
+  mix-blend-mode: hard-light;
+}
+
+/* Styling the bottom table text */
+.breaking {
+  display: inline;
+}
+
+/* Styling tooltip on the tables */
+.chartist-tooltip  {
+  opacity: 0;
+  position: absolute;
+  z-index: 30;
+  margin: 20px 10px 10px 10px;
+  background: #1B1C24;
+  padding: 5px 10px;
+  border-radius: 1px;
+  text-align: center;
+}
+
+.chartist-tooltip.tooltip-show {
+  opacity: 1;
+}
+
+
+/* Footer style */
+footer {
+  padding: 4rem 0 0.6rem 0;
+  font-size: 0.6rem;
+  text-align: right;
+}
